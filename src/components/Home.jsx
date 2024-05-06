@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Table from "./Table";
 import { Link } from "react-router-dom";
 
-
 const Home = () => {
   return (
     <Container>

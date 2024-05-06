@@ -20,5 +20,5 @@ const App = () => {
     </BrowserRouter>
   );
 };
-
+// "start": "concurrently \"json-server --watch db.json --port 4000\" \"react-scripts start\"",
 export default App;

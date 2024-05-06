@@ -31,7 +31,7 @@ const Update = () => {
         const imageUrl = e.target.result;
         setImage(imageUrl);
         setJsonObject({ link: imageUrl });
-        console.log("jsondata", jsonObject); // Store the image URL in a JSON object
+        console.log("jsondata", jsonObject); 
       };
       reader.readAsDataURL(file);
     }
