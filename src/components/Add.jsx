@@ -63,7 +63,7 @@ const Add = () => {
       status:status
     };
    
-    axios.post("http://localhost:4000/users", post).then((res) => {
+    axios.post("http://localhost:5000/users", post).then((res) => {
       console.log(res);
       
     });

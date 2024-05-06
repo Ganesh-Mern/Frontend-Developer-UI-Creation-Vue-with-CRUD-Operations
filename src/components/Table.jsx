@@ -9,7 +9,7 @@ const Table = () => {
   const itemsPerPage = 10;
   useEffect(() => {
     axios
-      .get("http://localhost:4000/users")
+      .get("http://localhost:5000/users")
       .then((res) => {
         setData(res.data)
         
@@ -36,7 +36,7 @@ const Table = () => {
 
 
   const dlt=(id)=>{
-    axios.delete(`http://localhost:4000/users/${id}`)
+    axios.delete(`http://localhost:5000/users/${id}`)
     .then(()=>{
       window.location.assign("/")
       

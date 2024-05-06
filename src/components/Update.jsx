@@ -39,7 +39,7 @@ const Update = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4000/users/${id}`)
+      .get(`http://localhost:5000/users/${id}`)
       .then((res) => {
         setImage(res.data.image);
         setAlt(res.data.alt);
@@ -75,7 +75,7 @@ const Update = () => {
       status:status
     };
     axios
-      .put(`http://localhost:4000/users/${id}`, post)
+      .put(`http://localhost:5000/users/${id}`, post)
       .then((res) => {
        console.log(res);
         navigate("/")
