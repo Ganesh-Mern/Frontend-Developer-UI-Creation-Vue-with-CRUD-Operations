@@ -21,7 +21,6 @@ const Home = () => {
         <Table />
         
       </Wrapper>
-      {/* <DropMenu/> */}
     </Container>
   );
 };

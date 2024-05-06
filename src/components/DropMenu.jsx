@@ -19,7 +19,6 @@ const DropMenu = ({handleStatus}) => {
   ];
 const [isOpen, setIsOpen] = useState(false);
 const [status,setStatus]=useState("")
-// const options = ["Option 1", "Option 2", "Option 3"];
 
 const toggleDropdown = () => {
     setIsOpen(!isOpen);

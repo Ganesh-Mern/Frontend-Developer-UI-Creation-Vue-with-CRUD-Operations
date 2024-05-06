@@ -4,6 +4,8 @@ import axios from "axios";
 import DropMenu from "./DropMenu";
 import { useNavigate } from "react-router-dom";
 
+
+
 const Add = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -61,7 +63,7 @@ const Add = () => {
       status:status
     };
    
-    axios.post("http://localhost:3000/users", post).then((res) => {
+    axios.post("http://localhost:4000/users", post).then((res) => {
       console.log(res);
       
     });

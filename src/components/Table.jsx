@@ -5,16 +5,16 @@ import { Link } from "react-router-dom";
 
 const Table = () => {
   const [data, setData] = useState([]);
-  const [currentPage, setCurrentPage] = useState(1); // Track current page
+  const [currentPage, setCurrentPage] = useState(1); 
   const itemsPerPage = 10;
   useEffect(() => {
     axios
-      .get("http://localhost:3000/users")
+      .get("http://localhost:4000/users")
       .then((res) => {
         setData(res.data)
         
       })
-      .catch((err) => console.log(err));
+      .catch((err) => console.log("data not fatch",err));
   }, []);
   const handlePrevious = () => {
     if (currentPage > 1) {
@@ -36,7 +36,7 @@ const Table = () => {
 
 
   const dlt=(id)=>{
-    axios.delete(`http://localhost:3000/users/${id}`)
+    axios.delete(`http://localhost:4000/users/${id}`)
     .then(()=>{
       window.location.assign("/")
       
